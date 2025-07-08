@@ -3,11 +3,10 @@ import { Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent, SidebarMenu
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "../ui/collapsible"
 import { Link } from "react-router"
 import { useEffect, useState } from "react"
-import type { NavbarMenu } from "@/interface/rbac/menu"
 
 
 export function AppSidebar() {
-    const [menu, setMenu] = useState<NavbarMenu[]>()
+    const [menu, setMenu] = useState<any>()
 
     useEffect(() => {
         setMenu([{ title: "Dashboard", url: "/dashboard", items: [] }])
