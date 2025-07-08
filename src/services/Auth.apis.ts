@@ -1,10 +1,6 @@
 import type { postLogin } from "@/interface/auth/login"
 import type { postRegiser } from "@/interface/auth/register"
-import type { postCreateAccessMenu } from "@/interface/rbac/accessMenu"
-import type { postCreateMenu } from "@/interface/rbac/menu"
-import type { postCreateRole } from "@/interface/rbac/role"
-import type { postCreateUser } from "@/interface/rbac/user"
-import { get, patch, post } from "@/lib/Axios"
+import { post } from "@/lib/Axios"
 import { cookies } from "@/lib/utils"
 
 const AuthServices = {
